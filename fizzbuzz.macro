@@ -1,0 +1,21 @@
+food chicken_breast:
+    protein 10
+    carbs 0
+    fats 2
+
+food protein_shake:
+    protein 20
+    carbs 5
+    fats 1
+
+food egg_whites:
+    protein 15
+    carbs 1
+    fats 0
+
+calculate target_protein = 15
+
+food protein_supplement:
+    protein target_protein
+    carbs 2
+    fats 1

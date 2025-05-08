@@ -1,0 +1,53 @@
+// MacroLang Grammar Definition
+
+// The main program structure
+MacroLangProgram:
+    statements *= Statement
+;
+
+// Different types of statements
+Statement:
+    FoodDeclaration | GoalDeclaration | CalculationStatement
+;
+
+// Food declaration with macros
+FoodDeclaration:
+    'food' name=ID ':' 
+    'protein' protein=ValueRef 
+    'carbs' carbs=ValueRef 
+    'fats' fats=ValueRef
+;
+
+// Optional goal declaration for personalized recommendations
+GoalDeclaration:
+    'goal' ':' 
+    'height' height=ValueRef 
+    'weight' weight=ValueRef 
+    'activity' activity=ActivityLevel
+    'objective' objective=ObjectiveType
+;
+
+// Simple calculation statement
+CalculationStatement:
+    'calculate' name=ID '=' value=INT
+;
+
+// Value reference - either an integer or a variable name
+ValueRef:
+    INT | ID
+;
+
+// Define activity levels
+ActivityLevel:
+    'sedentary' | 'moderate' | 'active'
+;
+
+// Define objective types
+ObjectiveType:
+    'maintain' | 'cut' | 'bulk'
+;
+
+// Comments
+Comment:
+    /\/\/.*$/
+;

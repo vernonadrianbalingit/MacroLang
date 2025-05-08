@@ -1,0 +1,35 @@
+// Simple MacroLang example that works with simplified grammar
+// This demonstrates variable references and basic arithmetic through variables
+
+// Define simple variables with integer values
+calculate protein_per_serving = 20
+calculate carbs_per_serving = 25
+calculate fats_per_serving = 8
+
+// Define foods with simple values and variable references
+food chicken_breast:
+    protein protein_per_serving
+    carbs 0
+    fats 5
+
+food rice:
+    protein 5
+    carbs carbs_per_serving
+    fats 1
+
+food sweet_potato:
+    protein 2
+    carbs 30
+    fats 0
+
+food salmon:
+    protein 25
+    carbs 0
+    fats 12
+
+// Define a simple goal
+goal:
+    height 180
+    weight 80
+    activity moderate
+    objective maintain

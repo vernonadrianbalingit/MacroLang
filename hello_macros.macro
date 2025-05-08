@@ -1,0 +1,4 @@
+food hello_macros:
+    protein protein_amount
+    carbs carbs_amount
+    fats 5

@@ -1,0 +1,19 @@
+calculate base_protein = 20
+calculate base_carbs = 25
+calculate base_fats = 8
+
+
+calculate double_protein = base_protein * 2
+calculate half_carbs = base_carbs / 2
+calculate extra_fats = base_fats + 4
+calculate reduced_protein = base_protein - 5
+
+food high_protein_meal:
+    protein double_protein
+    carbs half_carbs
+    fats reduced_protein
+
+food balanced_meal:
+    protein base_protein
+    carbs base_carbs
+    fats base_fats

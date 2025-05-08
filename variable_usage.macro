@@ -1,0 +1,21 @@
+calculate protein_per_serving = 20
+calculate carbs_per_serving = 25
+calculate fats_per_serving = 8
+
+//can def foods with vars
+
+
+food standard_protein:
+    protein protein_per_serving
+    carbs 0
+    fats 2
+
+food standard_carbs:
+    protein 4
+    carbs carbs_per_serving
+    fats 1
+
+food standard_fat:
+    protein 2
+    carbs 3
+    fats fats_per_serving

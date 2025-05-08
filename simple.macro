@@ -1,0 +1,24 @@
+// Simple MacroLang example
+// This demonstrates the most basic features
+
+// Define simple variables
+calculate protein_per_serving = 20
+calculate carbs_per_serving = 25
+
+// Define foods with simple values
+food chicken_breast:
+    protein protein_per_serving
+    carbs 0
+    fats 5
+
+food rice:
+    protein 5
+    carbs carbs_per_serving
+    fats 1
+
+// Define a simple goal
+goal:
+    height 180
+    weight 80
+    activity moderate
+    objective maintain

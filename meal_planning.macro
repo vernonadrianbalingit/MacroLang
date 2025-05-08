@@ -1,0 +1,71 @@
+calculate protein_per_serving = 20
+calculate carbs_per_serving = 25
+calculate fats_per_serving = 8
+
+
+calculate small_portion = 1
+calculate medium_portion = 2
+calculate large_portion = 3
+
+
+calculate breakfast_protein = protein_per_serving / 2
+calculate breakfast_carbs = carbs_per_serving + 10
+calculate breakfast_fats = fats_per_serving / 2
+
+calculate lunch_protein = protein_per_serving * medium_portion
+calculate lunch_carbs = carbs_per_serving + 5
+calculate lunch_fats = fats_per_serving - 2
+
+calculate dinner_protein = protein_per_serving + 10
+calculate dinner_carbs = carbs_per_serving / 2
+calculate dinner_fats = fats_per_serving + 4
+
+//breakfast
+food oatmeal:
+    protein 5
+    carbs breakfast_carbs
+    fats 3
+
+food eggs:
+    protein breakfast_protein
+
+    fats breakfast_fats
+
+// Lunch 
+food chicken_breast:
+    protein lunch_protein
+    carbs 0
+    fats 3
+
+food rice:
+    protein 4
+    carbs lunch_carbs
+    fats 1
+
+food vegetables:
+    protein 2
+    carbs 10
+    fats 0
+
+// Dinner
+food salmon:
+    protein dinner_protein
+    carbs 0
+    fats dinner_fats
+
+food sweet_potato:
+    protein 2
+    carbs dinner_carbs
+    fats 0
+
+food broccoli:
+    protein 3
+    carbs 6
+    fats 0
+
+// Personal goals based on height, weight, i am 5'9, but thats basically 6 foot //my scale is set to kg and cm 
+goal:
+    height 140
+    weight 50
+    activity sedentary
+    objective bulk 
